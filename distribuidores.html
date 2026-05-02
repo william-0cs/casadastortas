@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidores e Revendedores | Casa das Tortas Campinas SP</title>
+    <meta name="description" content="Encontre distribuidores autorizados da Casa das Tortas no interior de São Paulo, ou torne-se um revendedor. Sobremesas artesanais para empresas, restaurantes e clientes finais.">
+    <meta name="keywords" content="distribuidor de tortas SP, revendedor de sobremesas, tortas para revenda interior SP, atacado confeitaria Campinas, parceiro comercial sobremesas, fornecedor tortas São Paulo, como revender tortas, distribuição sobremesas interior paulista">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Casa das Tortas">
+    <link rel="canonical" href="https://casadastortas.com.br/distribuidores.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://casadastortas.com.br/distribuidores.html">
+    <meta property="og:title" content="Seja um Distribuidor | Casa das Tortas">
+    <meta property="og:description" content="Rede de distribuidores autorizados no interior de São Paulo. Torne-se um revendedor de tortas e sobremesas artesanais Casa das Tortas.">
+    <meta property="og:image" content="https://casadastortas.com.br/images/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Casa das Tortas">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seja um Distribuidor | Casa das Tortas">
+    <meta name="twitter:description" content="Rede de distribuidores autorizados de tortas e sobremesas artesanais no interior de São Paulo. Condições especiais para empresas.">
+    <meta name="twitter:image" content="https://casadastortas.com.br/images/og-image.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Distribuidores Autorizados - Casa das Tortas",
+        "description": "Rede de distribuidores autorizados de tortas e sobremesas artesanais no interior de São Paulo",
+        "url": "https://casadastortas.com.br/distribuidores.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Casa das Tortas",
+            "url": "https://casadastortas.com.br/",
+            "telephone": "+55-19-3227-8266",
+            "email": "comercial@casadastortas.com.br",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rua Manuel Fernandes Dias, 75",
+                "addressLocality": "Campinas",
+                "addressRegion": "SP",
+                "postalCode": "13050-000",
+                "addressCountry": "BR"
+            }
+        }
+    }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        :root {
+            --color-wine: #722F37;
+            --color-wine-dark: #4A1C23;
+            --color-wine-light: #8B3A42;
+            --color-berry: #9B2335;
+            --color-cream: #FDF8F5;
+            --color-warm-white: #FFFAF8;
+            --color-gold: #C9A227;
+            --color-dark: #1A1A1A;
+            --color-gray: #6B6B6B;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Montserrat', sans-serif;
+            --shadow-soft: 0 4px 20px rgba(114, 47, 55, 0.15);
+            --shadow-medium: 0 8px 40px rgba(114, 47, 55, 0.2);
+            --radius-lg: 16px;
+            --radius-xl: 30px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-cream);
+            color: var(--color-dark);
+        }
+
+        /* Navbar - EXATAMENTE igual ao index.html */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s ease;
+            background: linear-gradient(180deg, rgba(74, 28, 35, 0.9) 0%, rgba(74, 28, 35, 0.7) 50%, transparent 100%);
+        }
+
+        .nav.scrolled {
+            background: rgba(114, 47, 55, 0.9) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-medium);
+            padding: 0.6rem 4%;
+        }
+
+        .logo img {
+            height: 70px;
+            transition: height 0.3s ease;
+        }
+
+        .nav.scrolled .logo img {
+            height: 55px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .nav.scrolled .nav-links a {
+            color: white !important;
+            text-shadow: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-gold);
+        }
+        .nav-links a.nav-active {
+            color: var(--color-gold);
+            font-weight: 700;
+        }
+
+
+        .nav-cta {
+            background: var(--color-wine);
+            color: white;
+            padding: 0.8rem 1.6rem;
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav.scrolled .nav-cta {
+            background: var(--color-gold);
+            color: var(--color-wine-dark);
+        }
+
+        .nav-cta:hover {
+            background: white;
+            color: var(--color-wine);
+            transform: translateY(-2px);
+        }
+
+        .nav.scrolled .nav-cta:hover {
+            background: white;
+            color: var(--color-wine);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 2px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .nav.scrolled .mobile-menu-btn span {
+            background: white;
+        }
+
+        /* Mobile Nav */
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+        }
+
+        .mobile-nav-overlay.active {
+            display: block;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100%;
+            background: var(--color-wine-dark);
+            z-index: 1002;
+            transition: right 0.3s;
+            padding: 2rem;
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            margin-top: 3rem;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .mobile-nav a:hover {
+            color: var(--color-gold);
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 10rem 4% 5rem;
+            background:
+                linear-gradient(135deg, rgba(74, 28, 35, 0.85) 0%, rgba(114, 47, 55, 0.70) 100%),
+                url('images/hero-bg-1.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 4%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Grid Layout */
+        .distribuidores-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        /* Map Container */
+        .map-container {
+            position: sticky;
+            top: 100px;
+            height: 500px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Distribuidores List */
+        .distribuidores-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .distribuidor-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s;
+            cursor: pointer;
+            border-left: 4px solid transparent;
+        }
+
+        .distribuidor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+            border-left-color: var(--color-wine);
+        }
+
+        .distribuidor-card.active {
+            border-left-color: var(--color-gold);
+            background: var(--color-warm-white);
+        }
+
+        .distribuidor-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .distribuidor-header h3 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            color: var(--color-wine);
+        }
+
+        .distribuidor-cidade {
+            display: inline-block;
+            background: var(--color-cream);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--color-gray);
+        }
+
+        .distribuidor-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .distribuidor-info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .distribuidor-info-item svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--color-wine);
+            flex-shrink: 0;
+        }
+
+        .distribuidor-info-item span {
+            color: var(--color-gray);
+            font-size: 0.95rem;
+        }
+
+        .distribuidor-info-item a {
+            color: var(--color-wine);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .distribuidor-info-item a:hover {
+            color: var(--color-gold);
+        }
+
+        .distribuidor-actions {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        .btn-map {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-wine);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .btn-map:hover {
+            background: var(--color-wine-dark);
+            transform: translateY(-2px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--color-wine-dark) 0%, var(--color-wine) 100%);
+            padding: 4rem;
+            border-radius: 16px;
+            text-align: center;
+            color: white;
+            margin-top: 4rem;
+        }
+
+        .cta-section h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--color-gold);
+            color: var(--color-dark);
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #d4af37;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        /* Footer */
+        .footer {
+            background: linear-gradient(180deg, #1a0a0d 0%, #0d0507 100%);
+            color: var(--color-cream);
+            padding: 5rem 4% 0;
+            position: relative;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-wine), var(--color-gold), var(--color-wine));
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 4rem;
+        }
+        .footer-logo img {
+            height: 80px;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 2px 8px rgba(201,162,39,0.2));
+        }
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.92rem;
+            line-height: 1.8;
+        }
+        .footer-links h4 {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: var(--color-gold);
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.4rem;
+        }
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            font-size: 0.88rem;
+            transition: color 0.3s ease;
+            line-height: 1.5;
+        }
+        .footer-links a:hover { color: var(--color-gold); }
+        .footer-links li:not(:has(a)) {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 1.8rem 0;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 0.82rem;
+            letter-spacing: 0.02em;
+        }
+        @media (max-width: 992px) {
+            .footer-content { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .distribuidores-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .map-container {
+                position: relative;
+                top: 0;
+                height: 400px;
+                margin-bottom: 2rem;
+            }
+        }
+        @media (max-width: 600px) {
+            .footer-content { grid-template-columns: 1fr; }
+        }
+
+
+        @media (max-width: 768px) {
+
+            .nav-links,
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .page-header {
+                padding: 9rem 4% 3rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .main-content {
+                padding: 2rem 4%;
+            }
+
+            .distribuidor-actions {
+                flex-direction: column;
+            }
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 99;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Mobile pequeno < 480px */
+        @media (max-width: 480px) {
+            .distribuidores-list {
+                grid-template-columns: 1fr !important;
+            }
+            .distribuidor-card {
+                padding: 1rem;
+            }
+            .map-container {
+                height: 250px !important;
+            }
+            .page-hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+
+<body>
+    <nav class="nav" id="navbar">
+        <a href="index.html" class="logo"><img
+                src="images/logo.png"
+                alt="Casa das Tortas"></a>
+        <ul class="nav-links">
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="index.html#empresa">A Empresa</a></li>
+            <li><a href="catalogo.html">Produtos</a></li>
+            <li><a href="distribuidores.html" class="nav-active">Distribuidores</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+        <a href="index.html#contato" class="nav-cta">Fale Conosco</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">×</button>
+        <ul>
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="index.html#empresa">A Empresa</a></li>
+            <li><a href="catalogo.html">Produtos</a></li>
+            <li><a href="distribuidores.html" class="nav-active">Distribuidores</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <header class="page-header">
+        <h1>Nossos Distribuidores</h1>
+        <p>Encontre o distribuidor autorizado Casa das Tortas mais próximo de você</p>
+    </header>
+
+    <main class="main-content">
+        <div class="distribuidores-grid">
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+
+            <div class="distribuidores-list">
+                <div class="distribuidor-card fade-in" data-lat="-21.1704" data-lng="-47.8103"
+                    onclick="focusMap(-21.1704, -47.8103, this)">
+                    <div class="distribuidor-header">
+                        <h3>Maria da Penha Tanjoni</h3>
+                        <span class="distribuidor-cidade">Ribeirão Preto - SP</span>
+                    </div>
+                    <div class="distribuidor-info">
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                            <span>Ribeirão Preto - SP</span>
+                        </div>
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.12-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
+                            <a href="tel:16992391551">(16) 99239-1551</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="distribuidor-card fade-in" data-lat="-22.5648" data-lng="-47.4018"
+                    onclick="focusMap(-22.5648, -47.4018, this)">
+                    <div class="distribuidor-header">
+                        <h3>Jean</h3>
+                        <span class="distribuidor-cidade">Limeira - SP</span>
+                    </div>
+                    <div class="distribuidor-info">
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                            <span>Limeira - SP</span>
+                        </div>
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.12-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
+                            <a href="tel:19983346584">(19) 98334-6584</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="distribuidor-card fade-in" data-lat="-22.4149" data-lng="-47.5601"
+                    onclick="focusMap(-22.4149, -47.5601, this)">
+                    <div class="distribuidor-header">
+                        <h3>Evandro Damásio</h3>
+                        <span class="distribuidor-cidade">Rio Claro - SP</span>
+                    </div>
+                    <div class="distribuidor-info">
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                            <span>Rio Claro - SP</span>
+                        </div>
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.12-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
+                            <a href="tel:19996212969">(19) 99621-2969</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="distribuidor-card fade-in" data-lat="-21.5481" data-lng="-45.7328"
+                    onclick="focusMap(-21.5481, -45.7328, this)">
+                    <div class="distribuidor-header">
+                        <h3>Estação Verão Gelateria e Café</h3>
+                        <span class="distribuidor-cidade">Paraguaçu - MG</span>
+                    </div>
+                    <div class="distribuidor-info">
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                            <span>Praça Pedro Leite, 119 — Paraguaçu - MG</span>
+                        </div>
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.12-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
+                            <a href="tel:3532672352">(35) 3267-2352</a>
+                        </div>
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            <span>Sergio Leite Souza</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="distribuidor-card fade-in" data-lat="-23.8214" data-lng="-45.4097"
+                    onclick="focusMap(-23.8214, -45.4097, this)">
+                    <div class="distribuidor-header">
+                        <h3>Ana Carolina Gonçalves</h3>
+                        <span class="distribuidor-cidade">São Sebastião - SP</span>
+                    </div>
+                    <div class="distribuidor-info">
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                            <span>São Sebastião - SP</span>
+                        </div>
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.12-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
+                            <a href="tel:12982499397">(12) 98249-9397</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="distribuidor-card fade-in" data-lat="-23.5015" data-lng="-47.4526"
+                    onclick="focusMap(-23.5015, -47.4526, this)">
+                    <div class="distribuidor-header">
+                        <h3>Sidnir Vieira</h3>
+                        <span class="distribuidor-cidade">Sorocaba - SP</span>
+                    </div>
+                    <div class="distribuidor-info">
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                            <span>Sorocaba - SP</span>
+                        </div>
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.12-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
+                            <a href="tel:11967504128">(11) 96750-4128</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="distribuidor-card fade-in" data-lat="-23.2644" data-lng="-47.2994"
+                    onclick="focusMap(-23.2644, -47.2994, this)">
+                    <div class="distribuidor-header">
+                        <h3>André/Letícia</h3>
+                        <span class="distribuidor-cidade">Itu - SP</span>
+                    </div>
+                    <div class="distribuidor-info">
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
+                            <span>Itu - SP</span>
+                        </div>
+                        <div class="distribuidor-info-item">
+                            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.12-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" /></svg>
+                            <a href="tel:11920079318">(11) 92007-9318</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Quer ser um Distribuidor?</h2>
+            <p>Faça parte da nossa rede de distribuidores autorizados e ofereça os melhores produtos para seus clientes.
+            </p>
+            <a href="index.html#contato" class="cta-btn">Entre em Contato</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo"><img src="images/logo.png" alt="Casa das Tortas"></div>
+                <p>Há 25 anos produzindo as melhores tortas do Brasil com qualidade, tradição e sabor.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#empresa">A Empresa</a></li>
+                    <li><a href="catalogo.html">Produtos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Produtos</h4>
+                <ul>
+                    <li><a href="catalogo.html#tortas-doces">Tortas</a></li>
+                    <li><a href="catalogo.html#bolos">Bolos</a></li>
+                    <li><a href="catalogo.html#petit-gateau">Petit Gateau</a></li>
+                    <li><a href="catalogo.html#mousse">Mousse</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <ul>
+                    <li>📍 Rua Manuel Fernandes Dias, 75</li>
+                    <li>Campinas — SP</li>
+                    <li>🕐 Seg–Sex: 8h às 18h</li>
+                    <li>📞 <a href="tel:+551932278266">(19) 3227-8266</a></li>
+                    <li>✉️ <a href="mailto:comercial@casadastortas.com.br">comercial@casadastortas.com.br</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Casa das Tortas - Todos os direitos reservados. | Campinas - SP</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+
+        // Navbar scroll effect
+        
+        // Garantir que DOM está carregado
+        document.addEventListener('DOMContentLoaded', function() {
+            window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        });
+        
+
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+
+        function openMobileMenu() {
+            mobileNav.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileNav.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileNavClose.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        // Initialize Map
+        const map = L.map('map').setView([-22.9056, -47.0608], 7);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Custom marker icon
+        const markerIcon = L.divIcon({
+            className: 'custom-marker',
+            html: '<div style="background: #722F37; width: 30px; height: 30px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); border: 3px solid white; box-shadow: 0 2px 10px rgba(0,0,0,0.3);"></div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 30],
+            popupAnchor: [0, -30]
+        });
+
+        // Add markers for each distributor
+        const distribuidores = [
+            { lat: -21.1704, lng: -47.8103, nome: "Maria da Penha Tanjoni", cidade: "Ribeirão Preto - SP", endereco: "Ribeirão Preto - SP" },
+            { lat: -22.5648, lng: -47.4018, nome: "Jean", cidade: "Limeira - SP", endereco: "Limeira - SP" },
+            { lat: -22.4149, lng: -47.5601, nome: "Evandro Damásio", cidade: "Rio Claro - SP", endereco: "Rio Claro - SP" },
+            { lat: -21.5481, lng: -45.7328, nome: "Estação Verão Gelateria e Café", cidade: "Paraguaçu - MG", endereco: "Praça Pedro Leite, 119" },
+            { lat: -23.8214, lng: -45.4097, nome: "Ana Carolina Gonçalves", cidade: "São Sebastião - SP", endereco: "São Sebastião - SP" },
+            { lat: -23.5015, lng: -47.4526, nome: "Sidnir Vieira", cidade: "Sorocaba - SP", endereco: "Sorocaba - SP" },
+            { lat: -23.2644, lng: -47.2994, nome: "André/Letícia", cidade: "Itu - SP", endereco: "Itu - SP" },
+        ];
+
+        distribuidores.forEach(dist => {
+            const marker = L.marker([dist.lat, dist.lng], { icon: markerIcon }).addTo(map);
+            marker.bindPopup(`<b>${dist.nome}</b><br>${dist.cidade}<br>${dist.endereco}`);
+        });
+
+        // Focus map function
+        function focusMap(lat, lng, element) {
+            map.setView([lat, lng], 14);
+
+            // Remove active class from all cards
+            document.querySelectorAll('.distribuidor-card').forEach(card => {
+                card.classList.remove('active');
+            });
+
+            // Add active class to clicked card
+            element.classList.add('active');
+
+            // Scroll to map
+            document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    
+</script>
+
+    <a href="https://wa.me/5519932278266" class="whatsapp-float" target="_blank"><svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg></a>
+
+
+    <script>
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+    </script>
+</body>
+
+</html>

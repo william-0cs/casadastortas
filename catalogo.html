@@ -1,0 +1,3195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Tortas e Sobremesas | Casa das Tortas Campinas | Revenda e Delivery</title>
+    <meta name="description" content="Catálogo completo de tortas, bolos, petit gateau, mousses e empadas artesanais. Para revendedores, distribuidores e clientes finais em Campinas. Disponível no iFood, 99Food e Rappi.">
+    <meta name="keywords" content="tortas artesanais Campinas, bolos Campinas, petit gateau delivery Campinas, empadas Campinas, mousses artesanais, catálogo de tortas para revenda, sobremesas para restaurantes, fornecedor confeitaria atacado, iFood Campinas sobremesas, delivery tortas Campinas">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Casa das Tortas">
+    <link rel="canonical" href="https://casadastortas.com.br/catalogo.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://casadastortas.com.br/catalogo.html">
+    <meta property="og:title" content="Catálogo de Sobremesas para Revenda | Casa das Tortas">
+    <meta property="og:description" content="Tortas, bolos, petit gateau, mousses e empadas artesanais para revendedores e distribuidores. Fabricante em Campinas, SP.">
+    <meta property="og:image" content="https://casadastortas.com.br/images/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Casa das Tortas">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Catálogo de Sobremesas para Revenda | Casa das Tortas">
+    <meta name="twitter:description" content="Catálogo completo de tortas, bolos e sobremesas artesanais para revendedores e distribuidores. Fabricante em Campinas, SP.">
+    <meta name="twitter:image" content="https://casadastortas.com.br/images/og-image.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Catálogo de Sobremesas Casa das Tortas",
+        "description": "Catálogo completo de tortas, bolos, petit gateau, mousses e empadas para revendedores e distribuidores",
+        "url": "https://casadastortas.com.br/catalogo.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Casa das Tortas",
+            "url": "https://casadastortas.com.br/"
+        },
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Tortas Doces"},
+            {"@type": "ListItem", "position": 2, "name": "Tortas Salgadas"},
+            {"@type": "ListItem", "position": 3, "name": "Bolos"},
+            {"@type": "ListItem", "position": 4, "name": "Petit Gateau"},
+            {"@type": "ListItem", "position": 5, "name": "Empadas"},
+            {"@type": "ListItem", "position": 6, "name": "Mini Tortas"},
+            {"@type": "ListItem", "position": 7, "name": "Mousses"},
+            {"@type": "ListItem", "position": 8, "name": "Brownie"},
+            {"@type": "ListItem", "position": 9, "name": "Fogazza"}
+        ]
+    }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --color-wine: #722F37;
+            --color-wine-dark: #4A1C23;
+            --color-wine-light: #8B3A42;
+            --color-berry: #9B2335;
+            --color-cream: #FDF8F5;
+            --color-warm-white: #FFFAF8;
+            --color-gold: #C9A227;
+            --color-dark: #1A1A1A;
+            --color-gray: #6B6B6B;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Montserrat', sans-serif;
+            --shadow-soft: 0 4px 20px rgba(114, 47, 55, 0.15);
+            --shadow-medium: 0 8px 40px rgba(114, 47, 55, 0.2);
+            --radius-lg: 16px;
+            --radius-xl: 30px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-cream);
+            color: var(--color-dark);
+        }
+
+        /* Navbar - EXATAMENTE igual ao index.html */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s ease;
+            background: linear-gradient(180deg, rgba(74, 28, 35, 0.9) 0%, rgba(74, 28, 35, 0.7) 50%, transparent 100%);
+        }
+
+        .nav.scrolled {
+            background: rgba(114, 47, 55, 0.9) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-medium);
+            padding: 0.6rem 4%;
+        }
+
+        .logo img {
+            height: 60px;
+            transition: height 0.3s ease;
+        }
+
+        .nav.scrolled .logo img {
+            height: 55px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav.scrolled .nav-links a {
+            color: white !important;
+            text-shadow: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-gold);
+        }
+
+        .nav-links a.nav-active {
+            color: var(--color-gold);
+            font-weight: 700;
+        }
+
+        .nav-cta {
+            background: var(--color-wine);
+            color: white;
+            padding: 0.8rem 1.6rem;
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav.scrolled .nav-cta {
+            background: var(--color-gold);
+            color: var(--color-wine-dark);
+        }
+
+        .nav-cta:hover {
+            background: white;
+            color: var(--color-wine);
+            transform: translateY(-2px);
+        }
+
+        .nav.scrolled .nav-cta:hover {
+            background: #D4AF37;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        /* Mobile Nav */
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+        }
+
+        .mobile-nav-overlay.active {
+            display: block;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100%;
+            background: var(--color-wine-dark);
+            z-index: 1002;
+            transition: right 0.3s;
+            padding: 2rem;
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            margin-top: 3rem;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .mobile-nav a:hover {
+            color: var(--color-gold);
+        }
+
+        .catalogo-header {
+            padding: 10rem 4% 5rem;
+            background:
+                linear-gradient(135deg, rgba(74, 28, 35, 0.85) 0%, rgba(114, 47, 55, 0.70) 100%),
+                url('images/hero-bg-1.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .catalogo-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .catalogo-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .filtros {
+            padding: 1.2rem 4%;
+            background: white;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 70px;
+            z-index: 50;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filtro-btn {
+            padding: 0.45rem 0.85rem;
+            border: 2px solid var(--color-wine);
+            background: white;
+            color: var(--color-wine);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-size: 0.82rem;
+            white-space: nowrap;
+        }
+
+        .filtro-btn:hover,
+        .filtro-btn.active {
+            background: var(--color-wine);
+            color: white;
+        }
+
+        .categoria {
+            padding: 4rem 4%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .categoria-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .categoria-header h2 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            color: var(--color-wine);
+            margin-bottom: 1rem;
+        }
+
+        .categoria-header p {
+            color: var(--color-gray);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .tab-btn {
+            padding: 0.6rem 1.5rem;
+            border: 2px solid var(--color-wine);
+            background: white;
+            color: var(--color-wine);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .tab-btn:hover,
+        .tab-btn.active {
+            background: var(--color-wine);
+            color: white;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .tab-desc {
+            text-align: center;
+            color: var(--color-gray);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        .produto-card:hover 
+
+        
+
+        .produto-img.placeholder span {
+            color: white;
+            font-size: 3rem;
+            opacity: 0.5;
+        }
+
+        
+
+        
+
+        .produto-info .ingredientes {
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+        .produto-info .peso {
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(180deg, #1a0a0d 0%, #0d0507 100%);
+            color: var(--color-cream);
+            padding: 5rem 4% 0;
+            position: relative;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-wine), var(--color-gold), var(--color-wine));
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 4rem;
+        }
+        .footer-logo img {
+            height: 80px;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 2px 8px rgba(201,162,39,0.2));
+        }
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.92rem;
+            line-height: 1.8;
+        }
+        .footer-links h4 {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: var(--color-gold);
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.4rem;
+        }
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            font-size: 0.88rem;
+            transition: color 0.3s ease;
+            line-height: 1.5;
+        }
+        .footer-links a:hover { color: var(--color-gold); }
+        .footer-links li:not(:has(a)) {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 1.8rem 0;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 0.82rem;
+            letter-spacing: 0.02em;
+        }
+        @media (max-width: 992px) {
+            .footer-content { grid-template-columns: 1fr 1fr; gap: 2rem; }
+        }
+        @media (max-width: 600px) {
+            .footer-content { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+
+            .nav-links,
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .catalogo-header {
+                padding: 9rem 4% 3rem;
+            }
+
+            .catalogo-header h1 {
+                font-size: 2rem;
+            }
+
+            .filtros {
+                padding: 1rem 3%;
+                gap: 0.4rem;
+                top: 60px;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+            .filtros::-webkit-scrollbar { display: none; }
+
+            .filtro-btn {
+                padding: 0.4rem 0.75rem;
+                font-size: 0.78rem;
+                white-space: nowrap;
+                flex-shrink: 0;
+            }
+
+            .categoria {
+                padding: 2rem 4%;
+            }
+
+            .categoria-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .produto-card {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .produto-img {
+                height: 220px;
+            }
+            
+
+            .produto-info .peso {
+                font-size: 0.85rem;
+            }
+
+            .produto-info .descricao {
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+
+            .badge-bestseller {
+                font-size: 0.6rem;
+                padding: 0.2rem 0.5rem;
+            }
+
+            .btn-ver-ingredientes {
+                min-height: 48px;
+                font-size: 0.85rem;
+            }
+
+            .ingredientes-lista li {
+                font-size: 0.85rem;
+            }
+
+            .produto-card h3 {
+                font-size: 1.05rem;
+            }
+
+            .produto-info .peso {
+                font-size: 0.88rem;
+            }
+            /* Cards em coluna única */
+            .produto-card {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    
+        /* ==================== MELHORIAS CASA DAS TORTAS ==================== */
+        
+        /* Peso/Tamanho do Produto */
+        .produto-info .peso {
+            color: #722F37;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 0.4rem 0 0.6rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        /* Descrição */
+        .produto-info .descricao {
+            color: #3d3d3d;
+            font-size: 0.92rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: calc(1.6em * 3);
+        }
+
+        /* Badge MAIS VENDIDO */
+        .badge-bestseller {
+            display: inline-block;
+            background: linear-gradient(135deg, #C9A227, #DAA520);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.25rem 0.6rem;
+            border-radius: 12px;
+            margin-left: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(201, 162, 39, 0.3);
+            animation: pulseGold 2s ease-in-out infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes pulseGold {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 2px 8px rgba(201, 162, 39, 0.3);
+            }
+            50% { 
+                transform: scale(1.05);
+                box-shadow: 0 4px 12px rgba(201, 162, 39, 0.5);
+            }
+        }
+
+        /* Wrapper */
+        
+
+        /* Botão Ver Ingredientes */
+        .btn-ver-ingredientes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background: linear-gradient(135deg, #8B3A42, #722F37);
+            color: white;
+            border: none;
+            padding: 0.7rem 1rem;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(114, 47, 55, 0.2);
+            min-height: 44px; /* Touch-friendly */
+        }
+
+        .btn-ver-ingredientes:hover {
+            background: linear-gradient(135deg, #722F37, #4A1C23);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(114, 47, 55, 0.3);
+        }
+
+        .btn-ver-ingredientes:active {
+            transform: translateY(0);
+        }
+
+        .btn-ver-ingredientes .btn-icone {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-ver-ingredientes.ativo .btn-icone {
+            transform: rotate(180deg);
+        }
+
+        /* Conteúdo - controlado pelo bloco abaixo */
+
+        /* Lista */
+        .ingredientes-lista {
+            background: #FDF8F5;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .ingredientes-lista li {
+            color: #3d3d3d;
+            font-size: 0.88rem;
+            line-height: 1.8;
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+
+        .ingredientes-lista li::before {
+            content: '·';
+            color: var(--color-wine);
+            font-size: 1.2rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .ingredientes-lista li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Alérgenos */
+        /* Cards responsivos */
+        
+
+        
+
+        /* Mobile Optimizations */
+
+        /* Tablet */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .produto-card {
+                flex: 0 0 calc(50% - 1rem);
+                max-width: calc(50% - 1rem);
+            }
+            .nav {
+                padding: 0.8rem 2%;
+            }
+            
+            .nav-links {
+                gap: 1.2rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+            
+            .nav-cta {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
+            
+            .logo img {
+                height: 50px;
+            }
+        }
+
+        /* Desktop largo */
+        @media (min-width: 1400px) {
+            .produto-card {
+                flex: 0 0 300px;
+                max-width: 300px;
+            }
+        }
+
+        /* ==================== FIM MELHORIAS ==================== */
+
+    /* Navbar - EXATAMENTE igual ao index.html */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s ease;
+            background: linear-gradient(180deg, rgba(74, 28, 35, 0.9) 0%, rgba(74, 28, 35, 0.7) 50%, transparent 100%);
+        }
+
+        .nav.scrolled {
+            background: rgba(114, 47, 55, 0.9) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-medium);
+            padding: 0.6rem 4%;
+        }
+
+        .logo img {
+            height: 60px;
+            transition: height 0.3s ease;
+        }
+
+        .nav.scrolled .logo img {
+            height: 55px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav.scrolled .nav-links a {
+            color: white !important;
+            text-shadow: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-gold);
+        }
+
+        .nav-cta {
+            background: var(--color-wine);
+            color: white;
+            padding: 0.8rem 1.6rem;
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav.scrolled .nav-cta {
+            background: var(--color-gold);
+            color: var(--color-wine-dark);
+        }
+
+        .nav-cta:hover {
+            background: white;
+            color: var(--color-wine);
+            transform: translateY(-2px);
+        }
+
+        .nav.scrolled .nav-cta:hover {
+            background: #D4AF37;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        /* Mobile Nav */
+        .mobile-nav-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+        }
+
+        .mobile-nav-overlay.active {
+            display: block;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100%;
+            background: var(--color-wine-dark);
+            z-index: 1002;
+            transition: right 0.3s;
+            padding: 2rem;
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            margin-top: 3rem;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .mobile-nav a:hover {
+            color: var(--color-gold);
+        }
+
+        
+        /* Melhorias para larguras intermediárias */
+
+        
+        .produtos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .produto-card {
+            flex: 0 0 280px;
+            max-width: 280px;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .produto-card.expandido {
+            min-height: unset;
+        }
+
+        /* Grid responsivo otimizado */
+        @media (max-width: 900px) {
+            .produto-card {
+                flex: 0 0 260px;
+                max-width: 260px;
+            }
+        }
+
+        .produto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .produto-img {
+            height: 200px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--color-wine) 0%, var(--color-wine-dark) 100%);
+        }
+
+        .produto-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .produto-card:hover .produto-img img {
+            transform: scale(1.05);
+        }
+
+        .produto-img.placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .produto-img.placeholder span {
+            color: white;
+            font-size: 3rem;
+            opacity: 0.5;
+        }
+
+        .produto-info {
+            padding: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .produto-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            color: var(--color-dark);
+            margin-bottom: 0.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: calc(1.3em * 2);
+            line-height: 1.3;
+        }
+
+        .produto-info .ingredientes {
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+        .produto-info .peso {
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 99;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Tablet: 3 colunas */
+        
+        /* Mobile: 1 coluna */
+        
+
+        /* Alergênicos */
+        .alergenos-box {
+            margin-top: 0.8rem;
+            padding: 0.7rem 0.9rem;
+            background: #FFFBEB;
+            border-left: 3px solid #F59E0B;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.8rem;
+        }
+        .alergenos-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.4rem;
+            margin-bottom: 0.3rem;
+            line-height: 1.4;
+        }
+        .alergenos-item:last-child { margin-bottom: 0; }
+        .alergenos-icon { flex-shrink: 0; font-size: 0.85rem; }
+        .alergenos-label {
+            font-weight: 700;
+            color: #92400E;
+            white-space: nowrap;
+        }
+        .alergenos-text { color: #78350F; }
+
+        /* Ingredientes Overlay */
+        .ingredientes-wrapper {
+            margin-top: auto;
+            padding-top: 0.8rem;
+            position: relative;
+        }
+        .btn-ver-ingredientes {
+            background: var(--color-wine);
+            color: white;
+            border: none;
+            padding: 0.7rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.2s;
+        }
+        .btn-ver-ingredientes:hover {
+            background: var(--color-wine-dark);
+        }
+        .btn-icone {
+            transition: transform 0.3s;
+            font-size: 0.75rem;
+        }
+        .btn-icone.aberto {
+            transform: rotate(180deg);
+        }
+        .ingredientes-conteudo {
+            display: none;
+            background: #faf7f5;
+            border-radius: 10px;
+            border: 1px solid rgba(114,47,55,0.1);
+            padding: 1rem;
+            margin-top: 0.6rem;
+        }
+        .ingredientes-conteudo.aberto {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav" id="navbar">
+        <a href="index.html" class="logo"><img
+                src="images/logo.png"
+                alt="Casa das Tortas"></a>
+        <ul class="nav-links">
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="index.html#empresa">A Empresa</a></li>
+            <li><a href="catalogo.html" class="nav-active">Produtos</a></li>
+            <li><a href="distribuidores.html">Distribuidores</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+        <a href="index.html#contato" class="nav-cta">Fale Conosco</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">×</button>
+        <ul>
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="index.html#empresa">A Empresa</a></li>
+            <li><a href="catalogo.html" class="nav-active">Produtos</a></li>
+            <li><a href="distribuidores.html">Distribuidores</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <header class="catalogo-header">
+        <h1>Catálogo de Produtos</h1>
+        <p>Há 25 anos produzindo as melhores sobremesas do Brasil</p>
+    </header>
+
+    <div class="filtros">
+        <button class="filtro-btn active" onclick="mostrarTodos()">Todos</button>
+        <button class="filtro-btn" onclick="irPara('tortas-doces')">Tortas Doces</button>
+        <button class="filtro-btn" onclick="irPara('tortas-salgadas')">Tortas Salgadas</button>
+        <button class="filtro-btn" onclick="irPara('bolos')">Bolos</button>
+        <button class="filtro-btn" onclick="irPara('empadas')">Empadas</button>
+        <button class="filtro-btn" onclick="irPara('mousse')">Mousses</button>
+        <button class="filtro-btn" onclick="irPara('mini-tortas')">Mini Tortas</button>
+        <button class="filtro-btn" onclick="irPara('petit-gateau')">Petit Gateau</button>
+        <button class="filtro-btn" onclick="irPara('brownie')">Brownie</button>
+        <button class="filtro-btn" onclick="irPara('fogazza')">Fogazzas</button>
+    </div>
+
+    <main>
+        <!-- TORTAS DOCES -->
+        <section class="categoria" id="tortas-doces">
+            <div class="categoria-header">
+                <h2>Tortas Doces</h2>
+                <p>Sabores irresistíveis para todas as ocasiões</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-holandesa.jpg"
+                                alt="Torta Holandesa" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Holandesa <span class="badge-bestseller">MAIS VENDIDO</span></h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Creme holandês sobre base de biscoito, com cobertura de chocolate.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Creme de leite</li>
+                                    <li>Açúcar refinado</li>
+                                    <li>Manteiga sem sal</li>
+                                    <li>Gelatina incolor sem sabor</li>
+                                    <li>Biscoito maizena</li>
+                                    <li>Biscoito com chocolate</li>
+                                    <li>Leite integral</li>
+                                    <li>Achocolatado em pó</li>
+                                    <li>Gema em pó</li>
+                                    <li>Emulsificante</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">ℹ️</span>
+                                    <span><span class="alergenos-label">Pode conter:</span> <span class="alergenos-text">avelã</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-ferrero.jpg"
+                                alt="Torta Ferrero" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Ferrero <span class="badge-bestseller">MAIS VENDIDO</span></h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta de avelã com chocolate e creme cremoso.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Farinha de trigo</li>
+                                    <li>Açúcar refinado</li>
+                                    <li>Clara líquida</li>
+                                    <li>Gema em pó</li>
+                                    <li>Leite integral</li>
+                                    <li>Fermento químico</li>
+                                    <li>Chocolate em pó</li>
+                                    <li>Manteiga sem sal</li>
+                                    <li>Creme de leite</li>
+                                    <li>Chantilly</li>
+                                    <li>Avelã</li>
+                                    <li>Pasta de avelã</li>
+                                    <li>Gelatina sem sabor</li>
+                                    <li>Emulsificante</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, avelã, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-limao.jpg"
+                                alt="Torta de Limão" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta de Limão</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta cremosa de limão com base crocante.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Farinha de trigo</li>
+                                    <li>Açúcar refinado</li>
+                                    <li>Manteiga sem sal</li>
+                                    <li>Fermento químico</li>
+                                    <li>Leite integral</li>
+                                    <li>Gema em pó</li>
+                                    <li>Leite condensado</li>
+                                    <li>Creme de leite</li>
+                                    <li>Gelatina em pó incolor sem sabor</li>
+                                    <li>Saborizante de limão</li>
+                                    <li>Raspas de limão</li>
+                                    <li>Emulsificante</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-maracuja.jpg"
+                                alt="Torta de Maracujá" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta de Maracujá</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta cremosa de maracujá com base crocante de biscoito.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Massa crocante de biscoito</li>
+                                    <li>Leite condensado</li>
+                                    <li>Creme de leite</li>
+                                    <li>Suco natural de maracujá</li>
+                                    <li>Chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/cheesecake-frutas-vermelhas.jpg"
+                                alt="Torta Cheesecake Frutas Vermelhas" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Cheesecake Frutas Vermelhas <span class="badge-bestseller">MAIS VENDIDO</span></h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Cheesecake cremoso com geleia de frutas vermelhas.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Creme de leite</li>
+                                    <li>Manteiga</li>
+                                    <li>Açúcar</li>
+                                    <li>Gema em pó</li>
+                                    <li>Biscoito maria</li>
+                                    <li>Cream cheese</li>
+                                    <li>Geleia de frutas vermelhas</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-chocolate.jpg"
+                                alt="Torta de Chocolate" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta de Chocolate</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Bolo de chocolate amargo com mousse e raspas de chocolate.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo de chocolate amargo</li>
+                                    <li>Mousse de chocolate</li>
+                                    <li>Cobertura de raspas de chocolate</li>
+                                    <li>Chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-floresta-negra.jpg"
+                                alt="Torta Floresta Negra" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Floresta Negra</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló com mousse de chocolate, chantilly e cerejas.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló</li>
+                                    <li>Chantilly</li>
+                                    <li>Cereja</li>
+                                    <li>Mousse de chocolate</li>
+                                    <li>Cobertura de chantilly</li>
+                                    <li>Raspas de chocolate</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-grego-amarena.jpg"
+                                alt="Torta de Iogurte Grego com Amarena" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta de Iogurte Grego com Amarena</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta de iogurte grego com cereja amarena e licor.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Biscoito maria</li>
+                                    <li>Creme de leite</li>
+                                    <li>Manteiga</li>
+                                    <li>Gema em pó</li>
+                                    <li>Açúcar</li>
+                                    <li>Saborizante de iogurte grego</li>
+                                    <li>Cereja</li>
+                                    <li>Licor de amarena</li>
+                                    <li>Amora</li>
+                                    <li>Chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos · Álcool</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-romeu-julieta.jpg"
+                                alt="Torta Romeu e Julieta" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Romeu e Julieta</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta cremosa com cream cheese e geleia de goiaba.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Creme de leite</li>
+                                    <li>Manteiga sem sal</li>
+                                    <li>Açúcar</li>
+                                    <li>Gema em pó</li>
+                                    <li>Biscoito maria</li>
+                                    <li>Cream cheese</li>
+                                    <li>Geleia de goiaba</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-creme-trufado.jpg"
+                                alt="Torta Creme Trufado" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Creme Trufado</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta de biscoito com creme trufado de chocolate e ganache.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Biscoito maria</li>
+                                    <li>Creme de leite</li>
+                                    <li>Manteiga</li>
+                                    <li>Gema em pó</li>
+                                    <li>Açúcar</li>
+                                    <li>Saborizante de leite em pó</li>
+                                    <li>Trufado de chocolate</li>
+                                    <li>Aroma de ganache de chocolate</li>
+                                    <li>Chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-alema.jpg"
+                                alt="Torta Alemã" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Alemã</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Recheio cremoso com nozes e uvas passas sobre base amanteigada.</p>
+
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Creme de leite</li>
+                                    <li>Açúcar refinado</li>
+                                    <li>Manteiga sem sal</li>
+                                    <li>Gelatina incolor sem sabor</li>
+                                    <li>Biscoito maizena</li>
+                                    <li>Biscoito com chocolate</li>
+                                    <li>Leite integral</li>
+                                    <li>Achocolatado em pó</li>
+                                    <li>Gema em pó</li>
+                                    <li>Emulsificante</li>
+                                    <li>Nozes</li>
+                                    <li>Uvas passas</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos · Nozes</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados. Contém nozes.</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">ℹ️</span>
+                                    <span><span class="alergenos-label">Pode conter:</span> <span class="alergenos-text">avelã</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-prestigio.jpg"
+                                alt="Torta Prestígio" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Prestígio</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta de chocolate com coco ralado e cobertura de chocolate.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Chocolate em pó</li>
+                                    <li>Manteiga sem sal</li>
+                                    <li>Leite condensado</li>
+                                    <li>Leite</li>
+                                    <li>Creme de leite</li>
+                                    <li>Açúcar</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Coco ralado</li>
+                                    <li>Chocolate meio amargo</li>
+                                    <li>Topping</li>
+                                    <li>Gelatina em pó</li>
+                                    <li>Fermento químico</li>
+                                    <li>Clara líquida</li>
+                                    <li>Gema em pó</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-bombom.jpg"
+                                alt="Torta Bombom" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Bombom</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta de chocolate com amendoim e chantilly.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Creme de leite</li>
+                                    <li>Manteiga sem sal</li>
+                                    <li>Açúcar</li>
+                                    <li>Gema em pó</li>
+                                    <li>Chocolate meio amargo</li>
+                                    <li>Amendoim</li>
+                                    <li>Chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém ovos, leite, derivados e amendoim</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-africana.jpg"
+                                alt="Torta Africana" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Africana</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Bolo de chocolate com castanhas-do-pará, uvas passas e ganache.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló de chocolate</li>
+                                    <li>Mousse de chocolate</li>
+                                    <li>Castanhas-do-pará</li>
+                                    <li>Uvas passas</li>
+                                    <li>Ganache de chocolate meio amargo</li>
+                                    <li>Chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, leite, derivados e nozes</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-nova-tentacao.jpg"
+                                alt="Torta Nova Tentação" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Nova Tentação <span class="badge-bestseller">MAIS VENDIDO</span></h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta cremosa com cream cheese, chocolate meio amargo, nozes e doce de leite.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Creme de leite</li>
+                                    <li>Gema em pó</li>
+                                    <li>Cream cheese</li>
+                                    <li>Açúcar</li>
+                                    <li>Manteiga</li>
+                                    <li>Chocolate meio amargo</li>
+                                    <li>Nozes</li>
+                                    <li>Doce de leite</li>
+                                    <li>Chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém ovos, leite, derivados e nozes</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-banoffe.jpg"
+                                alt="Torta Banoffe" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta Banoffe</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta de biscoito com doce de leite, banana e chantilly.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Biscoito maria</li>
+                                    <li>Margarina</li>
+                                    <li>Creme de leite</li>
+                                    <li>Nata</li>
+                                    <li>Açúcar</li>
+                                    <li>Doce de leite</li>
+                                    <li>Banana</li>
+                                    <li>Creme de topping</li>
+                                    <li>Canela em pó</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- TORTAS SALGADAS -->
+        <section class="categoria" id="tortas-salgadas">
+            <div class="categoria-header">
+                <h2>Tortas Salgadas</h2>
+                <p>Recheios saborosos em massa artesanal crocante</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-frango-requeijao.jpg"
+                                alt="Torta de Frango com Requeijão" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta de Frango com Requeijão</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta salgada de frango com requeijão cremoso.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Farinha de trigo</li>
+                                    <li>Óleo de soja</li>
+                                    <li>Leite</li>
+                                    <li>Ovos</li>
+                                    <li>Sal</li>
+                                    <li>Frango</li>
+                                    <li>Fermento químico</li>
+                                    <li>Requeijão cremoso</li>
+                                    <li>Extrato de tomate</li>
+                                    <li>Pimenta-preta</li>
+                                    <li>Condimentos naturais</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-palmito-requeijao.jpg"
+                                alt="Torta de Palmito com Requeijão" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta de Palmito com Requeijão</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta salgada de palmito com requeijão cremoso.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Farinha de trigo</li>
+                                    <li>Manteiga</li>
+                                    <li>Gema em pó</li>
+                                    <li>Palmito</li>
+                                    <li>Creme de leite</li>
+                                    <li>Óleo</li>
+                                    <li>Sal</li>
+                                    <li>Caldo de galinha</li>
+                                    <li>Condimentos naturais</li>
+                                    <li>Requeijão</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/torta-presunto-queijo-requeijao.jpg"
+                                alt="Torta de Presunto e Queijo com Requeijão" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Torta de Presunto e Queijo com Requeijão</h3>
+                            <p class="peso">📦 1,4kg e 1,0kg</p>
+                            <p class="descricao">Torta salgada de presunto, mussarela e requeijão cremoso.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Farinha de trigo</li>
+                                    <li>Sal</li>
+                                    <li>Leite</li>
+                                    <li>Ovos</li>
+                                    <li>Pimenta</li>
+                                    <li>Condimentos naturais</li>
+                                    <li>Fermento biológico</li>
+                                    <li>Presunto</li>
+                                    <li>Mussarela</li>
+                                    <li>Requeijão cremoso</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- EMPADAS -->
+        <section class="categoria" id="empadas">
+            <div class="categoria-header">
+                <h2>Empadas</h2>
+                <p>Tradicionais e saborosas</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/empada-frango.jpg"
+                                alt="Empada de Frango" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Empada de Frango</h3>
+                            
+                            <p class="descricao">Empada artesanal de frango desfiado com temperos naturais.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Frango desfiado</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Óleo de soja</li>
+                                    <li>Sal</li>
+                                    <li>Ovos</li>
+                                    <li>Azeitona</li>
+                                    <li>Proteína de soja</li>
+                                    <li>Margarina</li>
+                                    <li>Condimentos naturais</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo e ovos</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/empada-carne-seca.jpg"
+                                alt="Empada de Carne Seca" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Empada de Carne Seca</h3>
+                            
+                            <p class="descricao">Empada artesanal de carne seca com temperos naturais.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Óleo de soja</li>
+                                    <li>Cebola</li>
+                                    <li>Alho</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Carne seca</li>
+                                    <li>Orégano</li>
+                                    <li>Colorífico</li>
+                                    <li>Caldo de carne</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/empada-palmito.jpg"
+                                alt="Empada de Palmito" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Empada de Palmito</h3>
+                            
+                            <p class="descricao">Empada artesanal de palmito com temperos naturais.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Palmito</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Sal</li>
+                                    <li>Leite</li>
+                                    <li>Óleo de soja</li>
+                                    <li>Ovos</li>
+                                    <li>Azeitona</li>
+                                    <li>Margarina</li>
+                                    <li>Condimentos naturais</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- BOLOS -->
+        <section class="categoria" id="bolos">
+            <div class="categoria-header">
+                <h2>Bolos</h2>
+                <p>Feitos com ingredientes selecionados e muito carinho</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/bolo-prestigio.jpg"
+                                alt="Bolo Prestígio" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Bolo Prestígio</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló de chocolate com doce de coco e chantilly.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló de chocolate</li>
+                                    <li>Doce de coco</li>
+                                    <li>Leite condensado</li>
+                                    <li>Cobertura de chantilly</li>
+                                    <li>Coco</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/bolo-floresta-negra.jpg"
+                                alt="Bolo Floresta Negra" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Bolo Floresta Negra</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló de chocolate com chantilly, cereja e raspas.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló de chocolate</li>
+                                    <li>Chantilly</li>
+                                    <li>Cereja</li>
+                                    <li>Cobertura de raspas de chocolate</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/bolo-nozes-doce-leite-ameixa.jpg"
+                                alt="Bolo de Nozes com Doce de Leite e Ameixa" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Bolo de Nozes com Doce de Leite e Ameixa</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló com doce de leite, nozes e ameixa.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló</li>
+                                    <li>Doce de leite</li>
+                                    <li>Nozes</li>
+                                    <li>Ameixa</li>
+                                    <li>Chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite, derivados e nozes</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/bolo-abacaxi-doce-leite.jpg"
+                                alt="Bolo de Abacaxi com Doce de Leite" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Bolo de Abacaxi com Doce de Leite</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló com creme de leite condensado e abacaxi.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló</li>
+                                    <li>Creme a base de leite condensado</li>
+                                    <li>Abacaxi</li>
+                                    <li>Cobertura de chantilly</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/bolo-brigadeiro.jpg"
+                                alt="Bolo Brigadeiro" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Bolo Brigadeiro</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló de chocolate com doce de brigadeiro.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló de chocolate</li>
+                                    <li>Doce de brigadeiro</li>
+                                    <li>Topping</li>
+                                    <li>Chocolate</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/bolo-mousse-chocolate.jpg"
+                                alt="Bolo Mousse de Chocolate" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Bolo Mousse de Chocolate</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló com mousse de chocolate meio amargo e raspas.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló de chocolate</li>
+                                    <li>Mousse de chocolate meio amargo</li>
+                                    <li>Raspas de chocolate</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/bolo-creme-trufado.jpg"
+                                alt="Bolo Creme Trufado" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Bolo Creme Trufado</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló com creme trufado de chocolate e chantilly.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló branco</li>
+                                    <li>Creme a base de leite em pó trufado com chocolate</li>
+                                    <li>Cobertura de chantilly</li>
+                                    <li>Cereja</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img" style="background: linear-gradient(135deg, var(--color-wine) 0%, var(--color-wine-dark) 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem;">
+                            <span style="font-size:2.5rem;">🍽️</span>
+                            <span style="color:rgba(255,255,255,0.8); font-size:0.85rem; font-weight:600; letter-spacing:0.1em;">EM BREVE</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Bolo Morango com Chocolate Branco</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló com creme de morango, mousse de chocolate branco e raspas.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló</li>
+                                    <li>Creme de morango</li>
+                                    <li>Mousse de chocolate branco</li>
+                                    <li>Topping</li>
+                                    <li>Morango</li>
+                                    <li>Raspas de chocolate branco</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img" style="background: linear-gradient(135deg, var(--color-wine) 0%, var(--color-wine-dark) 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem;">
+                            <span style="font-size:2.5rem;">🍽️</span>
+                            <span style="color:rgba(255,255,255,0.8); font-size:0.85rem; font-weight:600; letter-spacing:0.1em;">EM BREVE</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Bolo Chocolate ao Leite com Morango</h3>
+                            <p class="peso">📦 1,8kg e 1,0kg</p>
+                            <p class="descricao">Bolo pão de ló de chocolate com creme de morango e raspas de chocolate ao leite.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Bolo pão de ló de chocolate</li>
+                                    <li>Creme de morango</li>
+                                    <li>Mousse de chocolate</li>
+                                    <li>Topping</li>
+                                    <li>Morango</li>
+                                    <li>Raspas de chocolate ao leite</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- MOUSSES -->
+        <section class="categoria" id="mousse">
+            <div class="categoria-header">
+                <h2>Mousses</h2>
+                <p>Cremosos e irresistíveis</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mousse-chocolate-mesclado.jpg"
+                                alt="Mousse Chocolate Mesclado" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mousse Chocolate Mesclado</h3>
+                            <p class="peso">📦 100g</p>
+                            <p class="descricao">Mousse de chocolate branco e meio amargo com raspas.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Mousse de chocolate mesclado</li>
+                                    <li>Raspas de chocolate</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mousse-chocolate.jpg"
+                                alt="Mousse de Chocolate" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mousse de Chocolate</h3>
+                            <p class="peso">📦 100g</p>
+                            <p class="descricao">Mousse de chocolate com raspas de chocolate.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Clara líquida</li>
+                                    <li>Chocolate meio amargo</li>
+                                    <li>Chocolate ao leite</li>
+                                    <li>Gema em pó</li>
+                                    <li>Chocolate em pó</li>
+                                    <li>Açúcar</li>
+                                    <li>Conhaque</li>
+                                    <li>Gelatina</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos · Álcool</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém ovos e derivados de leite</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- MINI TORTINHAS -->
+        <section class="categoria" id="mini-tortas">
+            <div class="categoria-header">
+                <h2>Mini Tortas</h2>
+                <p>Porções individuais de 100g - Perfeitas para buffets</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mini-tortinha-holandesa.jpg"
+                                alt="Mini Torta Holandesa" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mini Torta Holandesa <span class="badge-bestseller">MAIS VENDIDO</span></h3>
+                            <p class="peso">📦 100g</p>
+                            <p class="descricao">Mini tortinha holandesa com creme e biscoito.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Creme de leite</li>
+                                    <li>Açúcar refinado</li>
+                                    <li>Manteiga sem sal</li>
+                                    <li>Gelatina incolor sem sabor</li>
+                                    <li>Biscoito maizena</li>
+                                    <li>Biscoito com chocolate</li>
+                                    <li>Leite integral</li>
+                                    <li>Achocolatado em pó</li>
+                                    <li>Gema em pó</li>
+                                    <li>Emulsificante</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">ℹ️</span>
+                                    <span><span class="alergenos-label">Pode conter:</span> <span class="alergenos-text">avelã</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mini-tortinha-alema.jpg"
+                                alt="Mini Torta Alemã" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mini Torta Alemã</h3>
+                            <p class="peso">📦 100g</p>
+                            <p class="descricao">Recheio cremoso com nozes e uvas passas sobre base amanteigada.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Creme de leite</li>
+                                    <li>Manteiga</li>
+                                    <li>Açúcar</li>
+                                    <li>Ovos</li>
+                                    <li>Nozes</li>
+                                    <li>Uvas passas</li>
+                                    <li>Cobertura de chocolate com nozes</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém leite, derivados, ovos e nozes</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mini-tortinha-floresta-negra.jpg"
+                                alt="Mini Torta Floresta Negra" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mini Torta Floresta Negra</h3>
+                            <p class="peso">📦 100g</p>
+                            <p class="descricao">Mini tortinha de floresta negra com chocolate e cereja.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Achocolatado em pó</li>
+                                    <li>Manteiga</li>
+                                    <li>Clara líquida</li>
+                                    <li>Açúcar</li>
+                                    <li>Creme de leite</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Leite</li>
+                                    <li>Gelatina em pó</li>
+                                    <li>Gema em pó</li>
+                                    <li>Topping</li>
+                                    <li>Fermento químico</li>
+                                    <li>Rum</li>
+                                    <li>Conhaque</li>
+                                    <li>Chantilly</li>
+                                    <li>Chocolate ao leite</li>
+                                    <li>Cereja</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos · Álcool</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mini-tortinha-brigadeiro.jpg"
+                                alt="Mini Torta de Brigadeiro" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mini Torta de Brigadeiro</h3>
+                            <p class="peso">📦 100g</p>
+                            <p class="descricao">Mini tortinha de brigadeiro com granulado de chocolate.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Leite condensado</li>
+                                    <li>Chocolate em pó</li>
+                                    <li>Manteiga</li>
+                                    <li>Creme de leite</li>
+                                    <li>Gema em pó</li>
+                                    <li>Clara líquida</li>
+                                    <li>Açúcar</li>
+                                    <li>Emulsificante</li>
+                                    <li>Achocolatado em pó</li>
+                                    <li>Gelatina</li>
+                                    <li>Chocolate granulado</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém leite, derivados e ovos</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mini-tortinha-maracuja.jpg"
+                                alt="Mini Torta de Maracujá" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mini Torta de Maracujá</h3>
+                            <p class="peso">📦 100g</p>
+                            <p class="descricao">Mini tortinha de maracujá com cobertura de chantilly.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Leite condensado</li>
+                                    <li>Polpa de maracujá natural</li>
+                                    <li>Creme de leite</li>
+                                    <li>Leite integral</li>
+                                    <li>Açúcar</li>
+                                    <li>Topping</li>
+                                    <li>Emulsificante</li>
+                                    <li>Gelatina</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mini-tortinha-mousse-chocolate.jpg"
+                                alt="Mini Torta Mousse de Chocolate" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mini Torta Mousse de Chocolate</h3>
+                            <p class="peso">📦 70g</p>
+                            <p class="descricao">Mini tortinha mousse de chocolate com raspas.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Clara líquida</li>
+                                    <li>Chocolate meio amargo</li>
+                                    <li>Chocolate em pó</li>
+                                    <li>Açúcar</li>
+                                    <li>Gelatina</li>
+                                    <li>Conhaque</li>
+                                    <li>Chocolate ao leite</li>
+                                    <li>Gema em pó</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos · Álcool</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém ovos e derivados de leite</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/mini-tortinha-limao.jpg"
+                                alt="Mini Torta de Limão" loading="lazy" class="no-zoom"></div>
+                        <div class="produto-info">
+                            <h3>Mini Torta de Limão</h3>
+                            <p class="peso">📦 100g</p>
+                            <p class="descricao">Mini tortinha de limão com mousse cremoso.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Leite condensado</li>
+                                    <li>Creme de leite</li>
+                                    <li>Leite integral</li>
+                                    <li>Topping</li>
+                                    <li>Saborizante em pó sabor limão</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- BROWNIE -->
+        <section class="categoria" id="brownie">
+            <div class="categoria-header">
+                <h2>Brownie</h2>
+                <p>Intenso sabor chocolate</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/brownie.jpg"
+                                alt="Brownie de Chocolate com Nozes" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Brownie de Chocolate com Nozes</h3>
+                            <p class="peso">📦 50g e 80g</p>
+                            <p class="descricao">Brownie intenso de chocolate com nozes crocantes.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Açúcar</li>
+                                    <li>Chocolate em pó</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Ovos</li>
+                                    <li>Manteiga</li>
+                                    <li>Sal</li>
+                                    <li>Nozes</li>
+                                    <li>Chocolate ao leite</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite, derivados e nozes</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- FOGAZZA -->
+        <section class="categoria" id="fogazza">
+            <div class="categoria-header">
+                <h2>Fogazzas</h2>
+                <p>Massa artesanal assada com recheios saborosos, perfeita para qualquer ocasião</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/categoria-fogazza.jpg"
+                                alt="Fogazza de Frango" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Fogazza de Frango</h3>
+                            <p class="peso">📦 110g</p>
+                            <p class="descricao">Fogazza artesanal de frango desfiado com azeitona.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Frango desfiado</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Óleo de soja</li>
+                                    <li>Sal</li>
+                                    <li>Ovos</li>
+                                    <li>Azeitona</li>
+                                    <li>Proteína de soja</li>
+                                    <li>Margarina</li>
+                                    <li>Condimentos naturais</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo e ovos</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img" style="background: linear-gradient(135deg, var(--color-wine) 0%, var(--color-wine-dark) 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem;">
+                            <span style="font-size:2.5rem;">🍽️</span>
+                            <span style="color:rgba(255,255,255,0.8); font-size:0.85rem; font-weight:600; letter-spacing:0.1em;">EM BREVE</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Fogazza de Carne</h3>
+                            <p class="peso">📦 110g</p>
+                            <p class="descricao">Fogazza artesanal de carne moída com temperos naturais.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Fermento biológico</li>
+                                    <li>Sal</li>
+                                    <li>Manteiga</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Carne moída</li>
+                                    <li>Ovos</li>
+                                    <li>Condimentos naturais</li>
+                                    <li>Cebola</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img" style="background: linear-gradient(135deg, var(--color-wine) 0%, var(--color-wine-dark) 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem;">
+                            <span style="font-size:2.5rem;">🍽️</span>
+                            <span style="color:rgba(255,255,255,0.8); font-size:0.85rem; font-weight:600; letter-spacing:0.1em;">EM BREVE</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Fogazza de Palmito</h3>
+                            <p class="peso">📦 110g</p>
+                            <p class="descricao">Fogazza artesanal de palmito com azeitona e temperos.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Palmito</li>
+                                    <li>Farinha de trigo</li>
+                                    <li>Sal</li>
+                                    <li>Leite</li>
+                                    <li>Óleo de soja</li>
+                                    <li>Ovos</li>
+                                    <li>Azeitona</li>
+                                    <li>Margarina</li>
+                                    <li>Condimentos naturais</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto-card fade-in">
+                        <div class="produto-img" style="background: linear-gradient(135deg, var(--color-wine) 0%, var(--color-wine-dark) 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem;">
+                            <span style="font-size:2.5rem;">🍽️</span>
+                            <span style="color:rgba(255,255,255,0.8); font-size:0.85rem; font-weight:600; letter-spacing:0.1em;">EM BREVE</span>
+                        </div>
+                        <div class="produto-info">
+                            <h3>Fogazza de Calabresa com Bacon</h3>
+                            <p class="peso">📦 110g</p>
+                            <p class="descricao">Fogazza artesanal de calabresa com bacon e temperos.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Farinha de trigo</li>
+                                    <li>Sal</li>
+                                    <li>Fermento biológico</li>
+                                    <li>Óleo de soja</li>
+                                    <li>Leite</li>
+                                    <li>Cebola</li>
+                                    <li>Calabresa</li>
+                                    <li>Bacon</li>
+                                    <li>Condimentos naturais</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- PETIT GATEAU -->
+        <section class="categoria" id="petit-gateau">
+            <div class="categoria-header">
+                <h2>Petit Gateau</h2>
+                <p>O clássico bolinho de chocolate</p>
+            </div>
+            <div class="produtos-grid">
+                    <div class="produto-card fade-in">
+                        <div class="produto-img"><img
+                                src="images/petit-gateau-chocolate.jpg"
+                                alt="Petit Gateau Chocolate ao Leite" loading="lazy"></div>
+                        <div class="produto-info">
+                            <h3>Petit Gateau Chocolate ao Leite</h3>
+                            
+                            <p class="descricao">Petit gateau clássico com recheio cremoso de chocolate ao leite.</p>
+                            <div class="ingredientes-wrapper">
+                                <button class="btn-ver-ingredientes" onclick="toggleIngredientes(this)">
+                                    <span class="btn-texto">Ver Ingredientes</span>
+                                    <span class="btn-icone">▼</span>
+                                </button>
+                                <div class="ingredientes-conteudo">
+<ul class="ingredientes-lista">
+                                    <li>Farinha de trigo</li>
+                                    <li>Ovos</li>
+                                    <li>Manteiga</li>
+                                    <li>Açúcar</li>
+                                    <li>Chocolate ao leite</li>
+                                    <li>Chocolate meio amargo</li>
+                                    <li>Chocolate em pó</li>
+                                </ul>
+                                <div class="alergenos-box">
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">⚠️</span>
+                                    <span><span class="alergenos-label">Contém:</span> <span class="alergenos-text">Glúten · Lactose · Ovos</span></span>
+                                </div>
+                                <div class="alergenos-item">
+                                    <span class="alergenos-icon">🚫</span>
+                                    <span><span class="alergenos-label">Alérgicos:</span> <span class="alergenos-text">contém trigo, ovos, leite e derivados</span></span>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo"><img src="images/logo.png" alt="Casa das Tortas"></div>
+                <p>Há 25 anos produzindo as melhores tortas do Brasil com qualidade, tradição e sabor.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#empresa">A Empresa</a></li>
+                    <li><a href="catalogo.html">Produtos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Produtos</h4>
+                <ul>
+                    <li><a href="catalogo.html#tortas-doces">Tortas</a></li>
+                    <li><a href="catalogo.html#bolos">Bolos</a></li>
+                    <li><a href="catalogo.html#petit-gateau">Petit Gateau</a></li>
+                    <li><a href="catalogo.html#mousse">Mousse</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <ul>
+                    <li>📍 Rua Manuel Fernandes Dias, 75</li>
+                    <li>Campinas — SP</li>
+                    <li>🕐 Seg–Sex: 8h às 18h</li>
+                    <li>📞 <a href="tel:+551932278266">(19) 3227-8266</a></li>
+                    <li>✉️ <a href="mailto:comercial@casadastortas.com.br">comercial@casadastortas.com.br</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Casa das Tortas - Todos os direitos reservados. | Campinas - SP</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+
+        function openMobileMenu() {
+            mobileNav.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileNav.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileNavClose.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        // Navegação por filtros
+        function irPara(id) {
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function mostrarTodos() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function mudarTab(btn, categoria, tamanho) {
+            const section = document.getElementById(categoria);
+            section.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+            section.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById(categoria + '-' + tamanho).classList.add('active');
+        }
+    </script>
+
+    <script>
+        function toggleIngredientes(button) {
+            const conteudo = button.nextElementSibling;
+            const icone = button.querySelector('.btn-icone');
+            const isAberto = conteudo.classList.contains('aberto');
+            const card = button.closest('.produto-card');
+
+            // Fechar todos os outros abertos e remover expandido dos cards
+            document.querySelectorAll('.ingredientes-conteudo.aberto').forEach(el => {
+                if (el !== conteudo) {
+                    el.classList.remove('aberto');
+                    const btn = el.previousElementSibling;
+                    if (btn) {
+                        const ic = btn.querySelector('.btn-icone');
+                        if (ic) ic.classList.remove('aberto');
+                    }
+                    const otherCard = el.closest('.produto-card');
+                    if (otherCard) otherCard.classList.remove('expandido');
+                }
+            });
+
+            // Toggle o atual
+            if (isAberto) {
+                conteudo.classList.remove('aberto');
+                if (icone) icone.classList.remove('aberto');
+                if (card) card.classList.remove('expandido');
+            } else {
+                conteudo.classList.add('aberto');
+                if (icone) icone.classList.add('aberto');
+                if (card) card.classList.add('expandido');
+            }
+        }
+
+        // Fechar overlay ao clicar fora
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.ingredientes-wrapper')) {
+                document.querySelectorAll('.ingredientes-conteudo.aberto').forEach(el => {
+                    el.classList.remove('aberto');
+                    const btn = el.previousElementSibling;
+                    if (btn) {
+                        const ic = btn.querySelector('.btn-icone');
+                        if (ic) ic.classList.remove('aberto');
+                    }
+                    const card = el.closest('.produto-card');
+                    if (card) card.classList.remove('expandido');
+                });
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fechar ingredientes ao trocar de categoria
+            const filtros = document.querySelectorAll('.filtro-btn');
+            filtros.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.ingredientes-conteudo.aberto').forEach(c => {
+                        c.classList.remove('aberto');
+                    });
+                    document.querySelectorAll('.btn-icone.aberto').forEach(b => {
+                        b.classList.remove('aberto');
+                    });
+                });
+            });
+        });
+    </script>
+
+
+    <a href="https://wa.me/5519932278266" class="whatsapp-float" target="_blank"><svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg></a>
+
+</body>
+
+</html>
